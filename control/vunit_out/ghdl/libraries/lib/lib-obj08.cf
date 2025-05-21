@@ -1,24 +1,24 @@
 v 4
-file / "/home/sergio/UNI/CVS/CVS/control/test/tb_AXI.vhd" "1dc95005ce10049b41cdd7824cdbbbd5e5908c02" "20250521174850.320":
-  entity tb_axi at 1( 0) + 0 on 24;
-  architecture arch of tb_axi at 14( 200) + 0 on 25;
-file / "/home/sergio/UNI/CVS/CVS/control/src/AXI_REGS.vhd" "09b26dfaff876039f71d75f74c3320df3bc55bf9" "20250521174828.491":
-  entity axi_regs at 1( 0) + 0 on 20;
-  architecture arch of axi_regs at 36( 1313) + 0 on 21;
-file / "/home/sergio/UNI/CVS/CVS/control/src/actuator.vhd" "30f7aecb5d99dbaa6ff572f20636cba942f0ca65" "20250521174828.369":
-  entity actuator at 1( 0) + 0 on 16;
-  architecture arch of actuator at 16( 254) + 0 on 17;
-file / "/home/sergio/UNI/CVS/CVS/control/src/hold.vhd" "aeec2702f91385db25cda76cea8ab8ed256fe64a" "20250521174828.280":
-  entity hold at 1( 0) + 0 on 13;
-  architecture arch of hold at 16( 250) + 0 on 14;
-file / "/home/sergio/UNI/CVS/CVS/control/src/plant.vhd" "e90831af9d372561cddca59ed04a073498791d02" "20250521174828.234":
-  entity plant at 1( 0) + 0 on 11;
-  architecture arch of plant at 16( 251) + 0 on 12;
-file / "/home/sergio/UNI/CVS/CVS/control/src/fixed_pkg.vhd" "011a30b16d0301eaa4ffdfa5ba76b6ab3daeffb8" "20250521174828.338":
-  package fixed_pkg at 1( 0) + 0 on 15;
-file / "/home/sergio/UNI/CVS/CVS/control/src/ControllerWithExtParams.vhd" "f16761be4c31852801ee3d3bd3ccd66a279f69db" "20250521174828.429":
+file / "/home/sergio/UNI/CVS/CVS/control/src/DesignTop.vhd" "870c4fbe16275d16cb4f66e18ae3b60c3a5950ea" "20250521190355.363":
+  entity designtop at 1( 0) + 0 on 60;
+  architecture arch of designtop at 40( 1343) + 0 on 61;
+file / "/home/sergio/UNI/CVS/CVS/control/src/ControllerWithExtParams.vhd" "f16761be4c31852801ee3d3bd3ccd66a279f69db" "20250521184701.104":
   entity controllerwithextparams at 1( 0) + 0 on 18;
   architecture arch of controllerwithextparams at 25( 671) + 0 on 19;
-file / "/home/sergio/UNI/CVS/CVS/control/src/DesignTop.vhd" "410de0392f4d557377181a2f48eaf6fbdbd1a748" "20250521174828.651":
-  entity designtop at 1( 0) + 0 on 22;
-  architecture arch of designtop at 40( 1362) + 0 on 23;
+file / "/home/sergio/UNI/CVS/CVS/control/src/fixed_pkg.vhd" "011a30b16d0301eaa4ffdfa5ba76b6ab3daeffb8" "20250521184700.956":
+  package fixed_pkg at 1( 0) + 0 on 15;
+file / "/home/sergio/UNI/CVS/CVS/control/src/plant.vhd" "a77078cddbd4f8a278f2b664cb26ef661710be06" "20250521184700.848":
+  entity plant at 1( 0) + 0 on 11;
+  architecture arch of plant at 16( 232) + 0 on 12;
+file / "/home/sergio/UNI/CVS/CVS/control/src/hold.vhd" "aeec2702f91385db25cda76cea8ab8ed256fe64a" "20250521184700.893":
+  entity hold at 1( 0) + 0 on 13;
+  architecture arch of hold at 16( 250) + 0 on 14;
+file / "/home/sergio/UNI/CVS/CVS/control/src/actuator.vhd" "feb235159c374b16c382bb21da63bae4a883a7aa" "20250521190355.260":
+  entity actuator at 1( 0) + 0 on 58;
+  architecture behavioral of actuator at 19( 698) + 0 on 59;
+file / "/home/sergio/UNI/CVS/CVS/control/src/AXI_REGS.vhd" "09b26dfaff876039f71d75f74c3320df3bc55bf9" "20250521184701.165":
+  entity axi_regs at 1( 0) + 0 on 20;
+  architecture arch of axi_regs at 36( 1313) + 0 on 21;
+file / "/home/sergio/UNI/CVS/CVS/control/test/tb_AXI.vhd" "1a1e8c68217234b11b2786da20606d31066c3d9d" "20250521190355.536":
+  entity tb_axi at 1( 0) + 0 on 62;
+  architecture arch of tb_axi at 14( 200) + 0 on 63;

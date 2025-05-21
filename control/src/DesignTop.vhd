@@ -32,14 +32,14 @@ entity DesignTop is
     AXI_S_RVALID  : out std_logic;
     AXI_S_RREADY  : in  std_logic;
 
-    PLANT_I : out std_logic_vector(7 downto 0);
+    PLANT_I : out std_logic;
     PLANT_O : in  std_logic_vector(7 downto 0)
   );
 end entity;
 
 architecture arch of DesignTop is
 
-  constant c_reg_num : natural := 4;
+  constant c_reg_num : natural := 5;
 
   signal regs : std_logic_vector(c_reg_num*G_AXI_S_DATA_WIDTH-1 downto 0);
 
@@ -117,11 +117,11 @@ begin
     -- Optional logic related to driving the actuator at the input of the plant
     i_actuator: entity work.actuator
     port map (
-      CONTROLLER_CLK,
-      not AXI_S_ARESETN,
-      '1',
-      u,
-      PLANT_I
+      clk         => CONTROLLER_CLK,
+      reset       => not AXI_S_ARESETN,
+      measure     => reg(4),
+      duty_cycle  => u, 
+      pwm_out     => PLANT_I          
     );
 
   end block;
