@@ -1,36 +1,24 @@
 v 4
-file / "/home/sergio/UNI/CVS/CVS/control/test/tb_soft_singleproc.vhd" "6ce01809692fe39e041bfe3ccfdd4ff8f12445ed" "20250521171205.225":
-  entity tb_soft_singleproc at 1( 0) + 0 on 30;
-  architecture arch of tb_soft_singleproc at 8( 128) + 0 on 31;
-file / "/home/sergio/UNI/CVS/CVS/control/test/tb_soft_singleproc_binvec.vhd" "09d0afaefe2aba59115b38d8b129988531a185fd" "20250521171205.081":
-  entity tb_soft_singleproc_binvec at 5( 247) + 0 on 26;
-  architecture arch of tb_soft_singleproc_binvec at 15( 411) + 0 on 27;
-file / "/home/sergio/UNI/CVS/CVS/control/src/DesignTop.vhd" "410de0392f4d557377181a2f48eaf6fbdbd1a748" "20250521171150.501":
-  entity designtop at 1( 0) + 0 on 22;
-  architecture arch of designtop at 40( 1362) + 0 on 23;
-file / "/home/sergio/UNI/CVS/CVS/control/src/ControllerWithExtParams.vhd" "f16761be4c31852801ee3d3bd3ccd66a279f69db" "20250521171150.262":
-  entity controllerwithextparams at 1( 0) + 0 on 18;
-  architecture arch of controllerwithextparams at 25( 671) + 0 on 19;
-file / "/home/sergio/UNI/CVS/CVS/control/src/fixed_pkg.vhd" "011a30b16d0301eaa4ffdfa5ba76b6ab3daeffb8" "20250521171150.171":
-  package fixed_pkg at 1( 0) + 0 on 15;
-file / "/home/sergio/UNI/CVS/CVS/control/src/plant.vhd" "e90831af9d372561cddca59ed04a073498791d02" "20250521171150.066":
-  entity plant at 1( 0) + 0 on 11;
-  architecture arch of plant at 16( 251) + 0 on 12;
-file / "/home/sergio/UNI/CVS/CVS/control/src/hold.vhd" "aeec2702f91385db25cda76cea8ab8ed256fe64a" "20250521171150.117":
-  entity hold at 1( 0) + 0 on 13;
-  architecture arch of hold at 16( 250) + 0 on 14;
-file / "/home/sergio/UNI/CVS/CVS/control/src/actuator.vhd" "30f7aecb5d99dbaa6ff572f20636cba942f0ca65" "20250521171150.201":
-  entity actuator at 1( 0) + 0 on 16;
-  architecture arch of actuator at 16( 254) + 0 on 17;
-file / "/home/sergio/UNI/CVS/CVS/control/src/AXI_REGS.vhd" "09b26dfaff876039f71d75f74c3320df3bc55bf9" "20250521171150.333":
+file / "/home/sergio/UNI/CVS/CVS/control/test/tb_AXI.vhd" "1dc95005ce10049b41cdd7824cdbbbd5e5908c02" "20250521174850.320":
+  entity tb_axi at 1( 0) + 0 on 24;
+  architecture arch of tb_axi at 14( 200) + 0 on 25;
+file / "/home/sergio/UNI/CVS/CVS/control/src/AXI_REGS.vhd" "09b26dfaff876039f71d75f74c3320df3bc55bf9" "20250521174828.491":
   entity axi_regs at 1( 0) + 0 on 20;
   architecture arch of axi_regs at 36( 1313) + 0 on 21;
-file / "/home/sergio/UNI/CVS/CVS/control/test/tb_soft_twoproc_bin.vhd" "0e9dee23f9b607359a8d5bd27927443fc8e4d7a0" "20250521171205.004":
-  entity tb_soft_twoproc_bin at 1( 0) + 0 on 24;
-  architecture arch of tb_soft_twoproc_bin at 11( 158) + 0 on 25;
-file / "/home/sergio/UNI/CVS/CVS/control/test/tb_soft_singleproc_bin.vhd" "b6f9c1890c0138d52e4063d8f8b7080c2257cfda" "20250521171205.155":
-  entity tb_soft_singleproc_bin at 1( 0) + 0 on 28;
-  architecture arch of tb_soft_singleproc_bin at 11( 161) + 0 on 29;
-file / "/home/sergio/UNI/CVS/CVS/control/test/tb_AXI.vhd" "1dc95005ce10049b41cdd7824cdbbbd5e5908c02" "20250521171315.353":
-  entity tb_axi at 1( 0) + 0 on 34;
-  architecture arch of tb_axi at 14( 200) + 0 on 35;
+file / "/home/sergio/UNI/CVS/CVS/control/src/actuator.vhd" "30f7aecb5d99dbaa6ff572f20636cba942f0ca65" "20250521174828.369":
+  entity actuator at 1( 0) + 0 on 16;
+  architecture arch of actuator at 16( 254) + 0 on 17;
+file / "/home/sergio/UNI/CVS/CVS/control/src/hold.vhd" "aeec2702f91385db25cda76cea8ab8ed256fe64a" "20250521174828.280":
+  entity hold at 1( 0) + 0 on 13;
+  architecture arch of hold at 16( 250) + 0 on 14;
+file / "/home/sergio/UNI/CVS/CVS/control/src/plant.vhd" "e90831af9d372561cddca59ed04a073498791d02" "20250521174828.234":
+  entity plant at 1( 0) + 0 on 11;
+  architecture arch of plant at 16( 251) + 0 on 12;
+file / "/home/sergio/UNI/CVS/CVS/control/src/fixed_pkg.vhd" "011a30b16d0301eaa4ffdfa5ba76b6ab3daeffb8" "20250521174828.338":
+  package fixed_pkg at 1( 0) + 0 on 15;
+file / "/home/sergio/UNI/CVS/CVS/control/src/ControllerWithExtParams.vhd" "f16761be4c31852801ee3d3bd3ccd66a279f69db" "20250521174828.429":
+  entity controllerwithextparams at 1( 0) + 0 on 18;
+  architecture arch of controllerwithextparams at 25( 671) + 0 on 19;
+file / "/home/sergio/UNI/CVS/CVS/control/src/DesignTop.vhd" "410de0392f4d557377181a2f48eaf6fbdbd1a748" "20250521174828.651":
+  entity designtop at 1( 0) + 0 on 22;
+  architecture arch of designtop at 40( 1362) + 0 on 23;
