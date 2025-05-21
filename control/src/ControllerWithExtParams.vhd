@@ -1,5 +1,7 @@
 library ieee;
 context ieee.ieee_std_context;
+use ieee.fixed_pkg.all;
+use ieee.fixed_float_types.all;
 
 -- A SISO (PID) controller with inputs for Ref, Kp, Ki, Kd
 entity ControllerWithExtParams is
@@ -17,8 +19,6 @@ entity ControllerWithExtParams is
 end entity;
 
 ---
-
-use work.fixed_pkg.all;
 
 -- Architecture of a proportional controller
 -- The facade for Ki and Kd is provided, but are not used

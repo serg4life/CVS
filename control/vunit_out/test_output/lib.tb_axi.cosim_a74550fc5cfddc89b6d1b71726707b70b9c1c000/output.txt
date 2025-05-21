@@ -1,0 +1,13 @@
+/home/sergio/UNI/CVS/CVS/control/test/tb_AXI.vhd:159:5:@0ms:(report note): start simulation
+        25000000 fs - default                      -    INFO - Ref: 0000000000000000 0.0
+        25000000 fs - default                      -    INFO - Kp:  0100000000000000 2.0
+        25000000 fs - default                      -    INFO - Ki:  0011000000000000 1.5
+        25000000 fs - default                      -    INFO - Kd:  0000000000001000 1.0e-3
+    100025000000 fs - default                      -    INFO - Ref: 0000000000000010 1.5e-1
+    200025000000 fs - default                      -    INFO - Ref: 0000000000001000 5.0e-1
+    300025000000 fs - default                      -    INFO - Ref: 0000000000011000 1.5
+    400025000000 fs - default                      -    INFO - Ref: 0000000000001100 7.5e-1
+    500025000000 fs - default                      -    INFO - Ref: 0000000000010000 1.0
+    600025000000 fs - default                      -    INFO - Ref: 0000000000000100 2.5e-1
+/home/sergio/UNI/CVS/CVS/control/test/tb_AXI.vhd:173:5:@600025ns:(report note): end of test
+simulation stopped @600025ns with status 0

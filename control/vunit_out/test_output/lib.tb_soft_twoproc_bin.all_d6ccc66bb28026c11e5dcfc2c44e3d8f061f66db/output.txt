@@ -1,0 +1,3 @@
+/home/sergio/UNI/CVS/CVS/control/test/tb_soft_twoproc_bin.vhd:37:5:@0ms:(report note): start simulation
+/home/sergio/UNI/CVS/CVS/control/test/tb_soft_twoproc_bin.vhd:53:5:@12120ms:(report note): end of test
+simulation stopped @12120ms with status 0

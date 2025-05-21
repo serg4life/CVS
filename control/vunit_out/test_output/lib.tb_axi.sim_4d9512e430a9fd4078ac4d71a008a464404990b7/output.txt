@@ -1,0 +1,3 @@
+/home/sergio/UNI/CVS/CVS/control/test/tb_AXI.vhd:159:5:@0ms:(report note): start simulation
+/home/sergio/UNI/CVS/CVS/control/test/tb_AXI.vhd:173:5:@150227500ps:(report note): end of test
+simulation stopped @150227500ps with status 0
