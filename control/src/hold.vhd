@@ -14,9 +14,20 @@ end entity;
 ---
 
 architecture arch of hold is
+  signal q: std_logic_vector(7 downto 0) := (others=>'0');
 
 begin
+  process(CLK)
+  begin
+    if rising_edge(CLK) then
+      if RST = '1' then
+        q <= (others=>'0');
+      elsif EN = '1' then
+        q <= I;
+      end if;
+    end if;
+  end process;
 
-O <= I;
+  O <= q;
 
 end arch;
