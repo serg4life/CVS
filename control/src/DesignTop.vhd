@@ -39,7 +39,7 @@ end entity;
 
 architecture arch of DesignTop is
 
-  constant c_reg_num : natural := 5;
+  constant c_reg_num : natural := 4;
 
   signal regs : std_logic_vector(c_reg_num*G_AXI_S_DATA_WIDTH-1 downto 0);
 
@@ -119,7 +119,6 @@ begin
     port map (
       clk         => CONTROLLER_CLK,
       reset       => not AXI_S_ARESETN,
-      measure     => reg(4),
       duty_cycle  => u, 
       pwm_out     => PLANT_I          
     );

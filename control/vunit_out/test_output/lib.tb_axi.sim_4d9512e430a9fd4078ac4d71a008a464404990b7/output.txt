@@ -1,13 +1,4 @@
-/home/sergio/UNI/CVS/CVS/control/test/tb_AXI.vhd:169:5:@0ms:(report note): start simulation
-../../src/ieee2008/fixed_generic_pkg-body.vhdl:2096:7:@2500ps:(assertion warning): :ieee:fixed_generic_pkg:"=": metavalue detected, returning FALSE
-../../src/ieee2008/numeric_std-body.vhdl:1897:7:@2500ps:(assertion warning): NUMERIC_STD."=": metavalue detected, returning FALSE
-/home/sergio/UNI/CVS/CVS/control/src/actuator.vhd:38:13:@7500ps:(report warning): Divisor cero detectado
-/home/sergio/UNI/CVS/CVS/control/src/actuator.vhd:38:13:@12500ps:(report warning): Divisor cero detectado
-/home/sergio/UNI/CVS/CVS/control/src/actuator.vhd:38:13:@17500ps:(report warning): Divisor cero detectado
-/home/sergio/UNI/CVS/CVS/control/src/actuator.vhd:38:13:@22500ps:(report warning): Divisor cero detectado
-/home/sergio/UNI/CVS/CVS/control/src/actuator.vhd:38:13:@27500ps:(report warning): Divisor cero detectado
-/home/sergio/UNI/CVS/CVS/control/src/actuator.vhd:38:13:@32500ps:(report warning): Divisor cero detectado
-/home/sergio/UNI/CVS/CVS/control/src/actuator.vhd:38:13:@37500ps:(report warning): Divisor cero detectado
-/home/sergio/UNI/CVS/CVS/control/vunit_out/test_output/lib.tb_axi.sim_4d9512e430a9fd4078ac4d71a008a464404990b7/ghdl/tb_axi-arch:error: bound check failure at /home/sergio/UNI/CVS/CVS/control/src/AXI_REGS.vhd:152
-  instance: .tb_axi(arch).uut@designtop(arch).i_axi2regs@axi_regs(arch).P8
-/home/sergio/UNI/CVS/CVS/control/vunit_out/test_output/lib.tb_axi.sim_4d9512e430a9fd4078ac4d71a008a464404990b7/ghdl/tb_axi-arch:error: simulation failed
+../../src/ieee2008/fixed_generic_pkg-body.vhdl:2538:9:@0ms:(assertion warning): :ieee:fixed_generic_pkg:TO_SFIXED(INTEGER): vector truncated
+/home/sergio/UNI/CVS/CVS/control/test/tb_AXI.vhd:161:5:@0ms:(report note): start simulation
+/home/sergio/UNI/CVS/CVS/control/test/tb_AXI.vhd:175:5:@150227500ps:(report note): end of test
+simulation stopped @150227500ps with status 0

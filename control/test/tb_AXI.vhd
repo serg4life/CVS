@@ -71,7 +71,6 @@ architecture arch of tb_AXI is
     write_bus(net, bus_handle, x"2", x"4433");
     write_bus(net, bus_handle, x"4", x"6655");
     write_bus(net, bus_handle, x"6", x"8877");
-    write_bus(net, bus_handle, x"8", x"AA99");
 
     wait for 25*c_clk;
 
@@ -87,9 +86,6 @@ architecture arch of tb_AXI is
     read_bus(net, bus_handle, x"6", tmp);
     check_equal(tmp, std_logic_vector'(x"8877"), "read data");
 
-    read_bus(net, bus_handle, x"8", tmp);
-    check_equal(tmp, std_logic_vector'(x"AA99"), "read data");
-
     wait for 50 us;
 
     write_bus(net, bus_handle, x"0", x"5555");
@@ -102,7 +98,7 @@ architecture arch of tb_AXI is
     signal net : inout network_t
   ) is
 
-    type params_t is array (0 to 4) of real;
+    type params_t is array (0 to 3) of real;
     type params_acc_t is access params_t;
 
     impure function getParamsPtr return params_acc_t is
@@ -142,10 +138,6 @@ architecture arch of tb_AXI is
     tmp := to_slv(to_sfixed(params(3), 2, -13));
     info("Kd:  " & to_string(tmp) & " " & to_string(params(3)));
     write_bus(net, bus_handle, x"6", to_slv(to_sfixed(params(3), 2, -13)));
-
-    tmp := to_slv(to_sfixed(params(4), 14, -1));
-    info("measure:  " & to_string(tmp) & " " & to_string(params(4)));
-    write_bus(net, bus_handle, x"8", to_slv(to_sfixed(params(4), 14, -1)));
 
     -- Call the foreign interrupt handle routine once every 100 us, 6 times
     for x in 0 to 5 loop
