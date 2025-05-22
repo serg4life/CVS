@@ -56,7 +56,7 @@ architecture arch of tb_AXI is
 
   -- System I/O
 
-  signal plant_i : std_logic_vector(7 downto 0) := (others=>'0');
+  signal plant_i : std_logic := '0';
   signal plant_o : std_logic_vector(7 downto 0) := (others=>'0');
 
   -- Procedure for running the test WITHOUT foreign functions/procedures
@@ -71,6 +71,7 @@ architecture arch of tb_AXI is
     write_bus(net, bus_handle, x"2", x"4433");
     write_bus(net, bus_handle, x"4", x"6655");
     write_bus(net, bus_handle, x"6", x"8877");
+    write_bus(net, bus_handle, x"8", x"AA99");
 
     wait for 25*c_clk;
 
@@ -85,6 +86,9 @@ architecture arch of tb_AXI is
 
     read_bus(net, bus_handle, x"6", tmp);
     check_equal(tmp, std_logic_vector'(x"8877"), "read data");
+
+    read_bus(net, bus_handle, x"8", tmp);
+    check_equal(tmp, std_logic_vector'(x"AA99"), "read data");
 
     wait for 50 us;
 

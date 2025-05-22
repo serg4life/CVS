@@ -1,0 +1,4 @@
+v 4
+file . "controller.vhd" "11bb87300af73d180bbd26ec49aa0f555b5ceb12" "20250522112021.038":
+  entity controller at 1( 0) + 0 on 11;
+  architecture behavioral of controller at 26( 1002) + 0 on 12;

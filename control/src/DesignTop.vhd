@@ -32,7 +32,7 @@ entity DesignTop is
     AXI_S_RVALID  : out std_logic;
     AXI_S_RREADY  : in  std_logic;
 
-    PLANT_I : out std_logic_vector(7 downto 0);
+    PLANT_I : out std_logic;
     PLANT_O : in  std_logic_vector(7 downto 0)
   );
 end entity;
