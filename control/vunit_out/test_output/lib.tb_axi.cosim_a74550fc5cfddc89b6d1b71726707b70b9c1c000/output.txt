@@ -1,4 +1,5 @@
-/home/sergio/UNI/CVS/CVS/control/test/tb_AXI.vhd:159:5:@0ms:(report note): start simulation
+../../src/ieee2008/fixed_generic_pkg-body.vhdl:2538:9:@0ms:(assertion warning): :ieee:fixed_generic_pkg:TO_SFIXED(INTEGER): vector truncated
+/home/sergio/UNI/CVS/CVS/control/test/tb_AXI.vhd:161:5:@0ms:(report note): start simulation
         25000000 fs - default                      -    INFO - Ref: 0000000000000000 0.0
         25000000 fs - default                      -    INFO - Kp:  0100000000000000 2.0
         25000000 fs - default                      -    INFO - Ki:  0011000000000000 1.5
@@ -9,5 +10,5 @@
     400025000000 fs - default                      -    INFO - Ref: 0000000000001100 7.5e-1
     500025000000 fs - default                      -    INFO - Ref: 0000000000010000 1.0
     600025000000 fs - default                      -    INFO - Ref: 0000000000000100 2.5e-1
-/home/sergio/UNI/CVS/CVS/control/test/tb_AXI.vhd:173:5:@600025ns:(report note): end of test
+/home/sergio/UNI/CVS/CVS/control/test/tb_AXI.vhd:175:5:@600025ns:(report note): end of test
 simulation stopped @600025ns with status 0

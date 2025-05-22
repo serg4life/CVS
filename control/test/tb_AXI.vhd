@@ -117,8 +117,10 @@ architecture arch of tb_AXI is
 
     variable tmp : std_logic_vector(axi_wdata'length-1 downto 0);
 
-    use work.fixed_pkg.to_sfixed;
-    use work.fixed_pkg.to_slv;
+    --use work.fixed_pkg.to_sfixed;
+    --use work.fixed_pkg.to_slv;
+    use ieee.fixed_pkg.all;
+    use ieee.fixed_float_types.all;
 
   begin
 

@@ -117,11 +117,10 @@ begin
     -- Optional logic related to driving the actuator at the input of the plant
     i_actuator: entity work.actuator
     port map (
-      CONTROLLER_CLK,
-      not AXI_S_ARESETN,
-      '1',
-      u,
-      PLANT_I
+      clk         => CONTROLLER_CLK,
+      reset       => not AXI_S_ARESETN,
+      duty_cycle  => u, 
+      pwm_out     => PLANT_I          
     );
 
   end block;
