@@ -12,3 +12,5 @@
     600025000000 fs - default                      -    INFO - Ref: 0000000000000100 2.5e-1
 /home/sergio/UNI/CVS/CVS/control/test/tb_AXI.vhd:175:5:@600025ns:(report note): end of test
 simulation stopped @600025ns with status 0
+skip (P=0 S=1 F=0 T=2) lib.tb_axi.cosim (405.4 seconds)
+

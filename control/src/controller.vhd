@@ -43,8 +43,8 @@ architecture Behavioral of controller is
     signal q1, q2   : sfixed (2 downto -20) := (others => '0');     --Cambiar los bits
 
 begin
-    spf <= sfixed(sp);
-    posf <= sfixed(pos);
+    spf <= sfixed(R);
+    posf <= sfixed(I);
     --ef <= resize(spf-posf, ef, FIXED_TRUNCATE, FIXED_SATURATE);     --Es necesario hacerlo asi?
 
     ef <= resize(spf - posf, ef);
@@ -59,10 +59,10 @@ begin
     b2_d <= resize(b2d*q2, b2_d);
 
     
-    process(clk)
+    process(CLK)
     begin
-        if rising_edge(clk) then
-            if rst = '0' then
+        if rising_edge(CLK) then
+            if RST = '0' then
                 if EN = '1' then
                     q1 <= resize(eq + q1, q1);  --Delta simple 1
                 end if;
@@ -72,10 +72,10 @@ begin
         end if;
     end process;
     
-    process(clk)
+    process(CLK)
     begin
-        if rising_edge(clk) then
-            if rst = '0' then
+        if rising_edge(CLK) then
+            if RST= '0' then
                 if EN = '1' then
                     q2 <= resize(q1 + q2, q2);  --Delta simple 2
                 end if;
@@ -89,15 +89,15 @@ begin
     u_aux <= resize(b12_d + b0_d, u_aux);
     
     -- ZOH
-    process(clk)
+    process(CLK)
     begin
-        if rising_edge(clk) then
-            if rst = '0' then
+        if rising_edge(CLK) then
+            if RST = '0' then
                 if EN = '1' then
-                    u <= to_slv(u_aux);
+                    O <= to_slv(u_aux);
                 end if;
             else
-                u <= (others => '0');
+                O <= (others => '0');
             end if;
         end if;
     end process;

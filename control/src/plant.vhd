@@ -32,7 +32,7 @@ begin
                 else
                     -- Desacelerar: disminuir velocidad (hasta 0)
                     if vel_actual > 0 then
-                      vel_actual <= vel_actual + 1 when vel_actual < MAX_VAL - 4 else vel_actual; --Simula una respuesta lenta del motor.
+                      vel_actual <= vel_actual -1 ; --Simula una respuesta lenta del motor.
                     end if;
                 end if;
             end if;

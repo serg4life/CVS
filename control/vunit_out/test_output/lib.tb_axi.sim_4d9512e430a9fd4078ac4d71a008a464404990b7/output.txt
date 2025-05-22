@@ -1,4 +1,4 @@
-../../src/ieee2008/fixed_generic_pkg-body.vhdl:2538:9:@0ms:(assertion warning): :ieee:fixed_generic_pkg:TO_SFIXED(INTEGER): vector truncated
-/home/sergio/UNI/CVS/CVS/control/test/tb_AXI.vhd:161:5:@0ms:(report note): start simulation
-/home/sergio/UNI/CVS/CVS/control/test/tb_AXI.vhd:175:5:@150227500ps:(report note): end of test
-simulation stopped @150227500ps with status 0
+/home/sergio/UNI/CVS/CVS/control/test/tb_AXI.vhd:239:24:error: file "/home/sergio/UNI/CVS/CVS/control/src/plant.vhd" has changed and must be reanalysed
+  i_plant: entity work.plant
+                       ^
+/usr/local/bin/ghdl:error: compilation error

@@ -6,12 +6,14 @@ use ieee.fixed_float_types.all;
 --use work.fixed_pkg.to_slv;
 
 entity actuator is
-  port (
-    CLK: in  std_logic;
-    RST: in  std_logic;
-    I:   in  std_logic_vector(7 downto 0);
-    O:   out std_logic
-  );
+    generic (WIDTH : natural := 12);
+    
+    port (
+        CLK: in  std_logic;
+        RST: in  std_logic;
+        I:   in  std_logic_vector(7 downto 0);
+        O:   out std_logic
+    );
 end entity;
 
 architecture Behavioral of actuator is
@@ -26,7 +28,7 @@ architecture Behavioral of actuator is
 
 begin
     
-    duty_fixed <= to_sfixed(duty_cycle, duty_fixed);
+    duty_fixed <= to_sfixed(I, duty_fixed);
 
     process(CLK, RST)
     begin
@@ -44,6 +46,6 @@ duty_maped <= std_logic_vector(resize((duty_fixed + offset) * map_value, WIDTH-1
 
 -- Lógica combinacional para generar la señal PWM
 signal_enable <= OR(duty_maped);
-pwm_out <= signal_enable when duty_maped >= counter else '0';
+O <= signal_enable when duty_maped >= counter else '0';
 
 end Behavioral;
